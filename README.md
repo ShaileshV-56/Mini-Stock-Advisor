@@ -72,29 +72,58 @@
 
 ---
 
-## 📁 Project Structure
+# 🏗️ Technical Architecture
 
-```
-Mini-Stock-Advisor/
-│
-├── frontend/
-    ├── app.py
-    ├── requirements.txt
-├── backend
-    ├── main.py
-    ├── requirements.txt
-├── README.md
-├── configs/
-├── models/
-│   └── ensemble.pkl
-│
-└── src/
-    ├── agent.py
-    ├── data.py
-    ├── models.py
-    ├── report.py
-    ├── universes.py
-```
+## Mini-Stock-Advisor System Design
+
+```mermaid
+graph TB
+    subgraph "User Layer"
+        UI[Streamlit UI]
+        DASH[Monitoring Dashboard]
+    end
+    
+    subgraph "Logic Layer"
+        API[FastAPI Orchestrator]
+        AGENT[LangGraph Agents]
+        TRAIN[Training Pipeline]
+        SCREENER[Stock Screener]
+        WATCH[Watchlist Manager]
+        PORT[Portfolio Tracker]
+    end
+    
+    subgraph "Storage & Memory"
+        MODELS[(ML Models)]
+        CACHE[(Joblib Cache)]
+        REPORTS[(PDF Reports)]
+        CONFIG[(YAML Config)]
+    end
+    
+    subgraph "External Services"
+        YF[yfinance]
+        GROQ[Groq LLM]
+        TAVILY[Tavily API]
+    end
+    
+    UI --> API
+    UI --> DASH
+    API --> AGENT
+    API --> TRAIN
+    API --> SCREENER
+    API --> WATCH
+    API --> PORT
+    
+    AGENT --> GROQ
+    AGENT --> TAVILY
+    TRAIN --> YF
+    SCREENER --> YF
+    WATCH --> YF
+    PORT --> YF
+    
+    API --> MODELS
+    API --> CACHE
+    API --> REPORTS
+    API --> CONFIG
 
 ---
 
