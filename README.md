@@ -75,49 +75,52 @@
 ## 🏗️ Technical Architecture
 
 ```mermaid
-graph TB
-    subgraph "User Layer"
-        UI[Streamlit UI]
-        DASH[Monitoring Dashboard]
+flowchart LR
+
+    subgraph USER["User Layer"]
+        UI["Streamlit UI"]
+        DASH["Monitoring Dashboard"]
     end
-    
-    subgraph "Logic Layer"
-        API[FastAPI Orchestrator]
-        AGENT[LangGraph Agents]
-        TRAIN[Training Pipeline]
-        SCREENER[Stock Screener]
-        WATCH[Watchlist Manager]
-        PORT[Portfolio Tracker]
+
+    subgraph LOGIC["Logic Layer"]
+        API["FastAPI Orchestrator"]
+        AGENT["LangGraph Agents"]
+        TRAIN["Training Pipeline"]
+        SCREENER["Stock Screener"]
+        WATCH["Watchlist Manager"]
+        PORT["Portfolio Tracker"]
     end
-    
-    subgraph "Storage & Memory"
-        MODELS[(ML Models)]
-        CACHE[(Joblib Cache)]
-        REPORTS[(PDF Reports)]
-        CONFIG[(YAML Config)]
+
+    subgraph STORAGE["Storage & Memory"]
+        MODELS[("ML Models")]
+        CACHE[("Joblib Cache")]
+        REPORTS[("PDF Reports")]
+        CONFIG[("YAML Config")]
     end
-    
-    subgraph "External Services"
-        YF[yfinance]
-        GROQ[Groq LLM]
-        TAVILY[Tavily API]
+
+    subgraph EXTERNAL["External Services"]
+        YF["yfinance"]
+        GROQ["Groq LLM"]
+        TAVILY["Tavily API"]
     end
-    
+
     UI --> API
-    UI --> DASH
+    DASH --> API
+
     API --> AGENT
     API --> TRAIN
     API --> SCREENER
     API --> WATCH
     API --> PORT
-    
+
     AGENT --> GROQ
     AGENT --> TAVILY
+
     TRAIN --> YF
     SCREENER --> YF
     WATCH --> YF
     PORT --> YF
-    
+
     API --> MODELS
     API --> CACHE
     API --> REPORTS
@@ -190,9 +193,11 @@ streamlit run app.py
 - S&P 500 Top 25 / Top 50
 
 **Example tickers:**
-AAPL MSFT NVDA
-RELIANCE.NS TCS.NS INFY.NS
 
+```text
+AAPL    MSFT    NVDA
+RELIANCE.NS    TCS.NS    INFY.NS
+```
 
 ---
 
