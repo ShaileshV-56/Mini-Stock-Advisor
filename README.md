@@ -7,18 +7,18 @@
 
 ## 📋 Table of Contents
 
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Project Structure](#-project-structure)
-- [How It Works](#%EF%B8%8F-how-it-works)
-- [Installation](#%EF%B8%8F-installation)
-- [Run the App](#-run-the-app)
-- [Supported Universes](#-supported-universes)
-- [Example Workflows](#-example-workflows)
-- [Performance Optimizations](#-performance-optimizations)
-- [Future Improvements](#-future-improvements)
-- [Limitations](#-limitations)
-- [Disclaimer](#-disclaimer)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Technical Architecture](#technical-architecture)
+- [How It Works](#how-it-works)
+- [Installation](#installation)
+- [Run the App](#run-the-app)
+- [Supported Universes](#supported-universes)
+- [Example Workflows](#example-workflows)
+- [Performance Optimizations](#performance-optimizations)
+- [Future Improvements](#future-improvements)
+- [Limitations](#limitations)
+- [Disclaimer](#disclaimer)
 
 ---
 
@@ -72,9 +72,7 @@
 
 ---
 
-# 🏗️ Technical Architecture
-
-## Mini-Stock-Advisor System Design
+## 🏗️ Technical Architecture
 
 ```mermaid
 graph TB
@@ -124,6 +122,7 @@ graph TB
     API --> CACHE
     API --> REPORTS
     API --> CONFIG
+```
 
 ---
 
@@ -142,7 +141,7 @@ graph TB
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/Mini-Stock-Advisor.git
+git clone https://github.com/ShaileshV-56/Mini-Stock-Advisor.git
 cd Mini-Stock-Advisor
 ```
 
@@ -191,11 +190,9 @@ streamlit run app.py
 - S&P 500 Top 25 / Top 50
 
 **Example tickers:**
+AAPL MSFT NVDA
+RELIANCE.NS TCS.NS INFY.NS
 
-```
-AAPL    MSFT    NVDA
-RELIANCE.NS    TCS.NS    INFY.NS
-```
 
 ---
 
@@ -228,6 +225,21 @@ RELIANCE.NS    TCS.NS    INFY.NS
 - [ ] Portfolio optimization
 - [ ] CI/CD deployment
 
+---
+
+## ⚠️ Limitations
+
+- Forecasts rely on historical patterns and may not capture sudden market events
+- yfinance data can have gaps or delays
+- LLM commentary is probabilistic, not verified financial research
+- Limited to NIFTY 50 and S&P 500 Top 50 universes currently
+- Portfolio data stored in-session only
+
+---
+
+## 📢 Disclaimer
+
+**⚠️ Not Financial Advice.** Mini Stock Advisor is a personal learning project. All forecasts, signals, and AI-generated commentary are for educational purposes only. Do not make investment decisions based solely on this tool. Always consult a qualified financial advisor.
 
 ---
 
@@ -236,6 +248,3 @@ RELIANCE.NS    TCS.NS    INFY.NS
 **Shailesh V**  
 [![GitHub](https://img.shields.io/badge/GitHub-ShaileshV-181717?style=flat&logo=github)](https://github.com/ShaileshV-56)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-shailesh56/-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/shailesh56/)
-
----
-
