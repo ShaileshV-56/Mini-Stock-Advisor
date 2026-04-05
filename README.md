@@ -199,21 +199,6 @@ RELIANCE.NS    TCS.NS    INFY.NS
 - [ ] Portfolio optimization
 - [ ] CI/CD deployment
 
----
-
-## ⚠️ Limitations
-
-- Educational use only — not financial advice
-- Data APIs may occasionally be unreliable
-- Predictions are uncertain and not guaranteed
-- Alerts are in-app only (no push/email notifications)
-
----
-
-## ⚠️ Disclaimer
-
-> This project is for **educational purposes only**.  
-> It is **not financial advice**. Always do your own research before making investment decisions.
 
 ---
 
