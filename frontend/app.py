@@ -13,7 +13,7 @@ import requests
 import plotly.graph_objects as go
 import pandas as pd
 
-API_BASE = "https://mini-stock-advisor.onrender.com/"
+API_BASE = "https://mini-stock-advisor.onrender.com"
 
 st.set_page_config(page_title="Mini Stock Advisor", layout="wide", page_icon="📈")
 st.title("🚀 Mini Stock Advisor")
