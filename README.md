@@ -220,7 +220,7 @@ RELIANCE.NS    TCS.NS    INFY.NS
 ## 👤 Author
 
 **Shailesh V**  
-[![GitHub](https://img.shields.io/badge/GitHub-ShaileshV-56-181717?style=flat&logo=github)](https://github.com/ShaileshV-56)
+[![GitHub](https://img.shields.io/badge/GitHub-ShaileshV-181717?style=flat&logo=github)](https://github.com/ShaileshV-56)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-shailesh56/-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/shailesh56/)
 
 ---
