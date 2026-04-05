@@ -57,14 +57,18 @@
 ## 🧠 Tech Stack
 
 | Layer | Tools |
-|---|---|
-| Frontend / App | Streamlit |
+| --- | --- |
+| Frontend / UI | Streamlit |
+| Backend API | FastAPI, Uvicorn |
 | Data | yfinance, pandas, numpy |
 | Visualization | Plotly |
-| ML | scikit-learn, XGBoost, Prophet, joblib |
-| LLM Layer | LangGraph / Groq |
-| Reporting | PDF generation |
-| Deployment | Streamlit Cloud / Docker |
+| ML / Forecasting | scikit-learn, XGBoost, Prophet, joblib |
+| LLM / Agents | LangGraph, LangChain Core, Groq |
+| External APIs | Tavily (news/search) |
+| Reporting | ReportLab (PDF generation) |
+| Config / Env | python-dotenv, PyYAML |
+| Deployment (Frontend) | Streamlit Cloud |
+| Deployment (Backend) | Render |
 
 ---
 
@@ -73,24 +77,23 @@
 ```
 Mini-Stock-Advisor/
 │
-├── app.py
-├── requirements.txt
-├── Dockerfile
+├── frontend/
+    ├── app.py
+    ├── requirements.txt
+├── backend
+    ├── main.py
+    ├── requirements.txt
 ├── README.md
-│
 ├── configs/
 ├── models/
 │   └── ensemble.pkl
 │
 └── src/
-    ├── data.py
     ├── agent.py
+    ├── data.py
+    ├── models.py
     ├── report.py
     ├── universes.py
-    ├── screener.py
-    ├── watchlist.py
-    ├── portfolio.py
-    └── helpers.py
 ```
 
 ---
