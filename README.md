@@ -219,12 +219,9 @@ RELIANCE.NS    TCS.NS    INFY.NS
 
 ## 👤 Author
 
-**Your Name**  
-[![GitHub](https://img.shields.io/badge/GitHub-your--username-181717?style=flat&logo=github)](https://github.com/ShaileshV-56)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-your--profile-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/shailesh56/)
+**Shailesh V**  
+[![GitHub](https://img.shields.io/badge/GitHub-ShaileshV-56-181717?style=flat&logo=github)](https://github.com/ShaileshV-56)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-shailesh56/-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/shailesh56/)
 
 ---
 
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
