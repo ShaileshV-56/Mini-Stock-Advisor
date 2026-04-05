@@ -1,0 +1,11 @@
+data:
+  tickers: ["AAPL", "MSFT", "GOOGL", "RELIANCE.NS", "TCS.NS"]
+  period: "2y"
+  
+model:
+  lookback: 14
+  forecast_horizon: 7
+  
+llm:
+  model: "llama-3.1-8b-instant"  # Groq
+  temperature: 0.1

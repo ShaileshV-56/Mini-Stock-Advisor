@@ -1,0 +1,26 @@
+fastapi==0.115.0
+cachetools==5.3.3
+uvicorn[standard]==0.30.6
+pydantic==2.7.4
+
+# Data & ML
+yfinance>=0.2.50
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.1
+xgboost==2.1.0
+prophet==1.1.5
+joblib==1.4.2
+
+# AI agent (FIXED)
+langchain-core>=0.3,<0.4
+langgraph>=0.2.30
+langchain-groq>=0.2,<0.3
+tavily-python==0.3.3
+
+# PDF
+reportlab==4.2.2
+
+# Config
+python-dotenv==1.0.1
+pyyaml==6.0.2
